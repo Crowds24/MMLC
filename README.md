@@ -22,7 +22,11 @@ until -- toolkit: get redundant data, scatter plots, and more
 upperLimit -- get the upper limit of oracle worker ability
 ```
 ## Clone
-Clone data needs to use git lfs. Because of the size of the uploaded training data, git lfs is used to upload it.
+Clone data needs to use git lfs. Because of the size of the uploaded training data, git lfs is used to upload it. Install link: https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
+
+```
+git lfs clone https://github.com/Crowds24/MMLC.git
+```
 ## Result
 ### truth inference
 True inference can be directly performed through the trained model. For example, under the getOracleWorker package of music, you can load the trained model (musicModel_origin) in the train package and run the following command to obtain the results.
