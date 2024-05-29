@@ -167,3 +167,12 @@ def workerScatter_IOSMAP_3D(data, colors=colors_9):
     plt.show()
 
     plt.savefig('save_path')
+if __name__ == '__main__':
+    oracle_worker = [0.053305521494511406, 0.07019503908514073, 0.031879648603875224, 0.07694784924387932,
+                     0.04160289917461047, 0.04587434254812472,
+                     0.09807082265615463, 0.049070558915234576, 0.08418243420733647, 0.11319732726222337]
+    numpy_array = np.load('../getOracleWorker/numpy_array.npy')
+    print(numpy_array.shape)
+    numpy_array = np.vstack((numpy_array, oracle_worker))
+    # plotWorkerScatter.workerScatter(numpy_array)
+    workerScatter_IOSMAP(numpy_array)
