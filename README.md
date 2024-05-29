@@ -50,7 +50,7 @@ In the until package, data can be divided according to the redundancy value.the 
 python redundancy.py
 ```
 #### 1.3 Clustering Methods in Oracle Worker Finding:
-Get the upper limit of oracle worker capabilities by running the method in upperLImit
+In the getOracleWorker method, you can get the accuracy of oracleWoker's answers under different methods. Get the upper limit of oracle worker capabilities by running the method in upperLImit.
 ```setup
 python trainModel.py
 ```
