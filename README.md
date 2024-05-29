@@ -14,12 +14,12 @@ Apple M1 Pro
 Introduce the role of each package
 ```
 aggregationMethod -- aggregation method
-data -- training data、 fill data and redundant data
-fillData -- data filling method
-getOracleWorker -- get oracle worker and do truth inference
-train -- model train and save model
-until -- toolkit: get redundant data, scatter plots, and more
-upperLimit -- get the upper limit of oracle worker ability
+data              -- training data、 fill data and redundant data
+fillData          -- data filling method
+getOracleWorker   -- get oracle worker and do truth inference
+train             -- model train and save model
+until             -- toolkit: get redundant data, scatter plots, and more
+upperLimit        -- get the upper limit of oracle worker ability
 ```
 ## Clone
 Clone data needs to use git lfs. Because of the size of the uploaded training data, git lfs is used to upload it. Install link: https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage
