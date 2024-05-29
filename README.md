@@ -35,7 +35,7 @@ True inference can be directly performed through the trained model. For example,
 python getOracleWorker.py
 ```
 ###### Train
-Train the model through the train method under the trian package.Train the model by training the train method under the trian package, and then load the corresponding model in the getOracleWorker package method for true value inference.
+Train the model by training the train method under the trian package, and then load the corresponding model in the getOracleWorker package method for true value inference.
 In train package：
 ```setup
 python train.py
