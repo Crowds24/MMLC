@@ -127,3 +127,13 @@ def workerScatterLLE(data):
     plt.scatter(X_lle[:, 0], X_lle[:, 1], c=colors_9, cmap='RdYlGn')
     plt.colorbar()
     plt.show()
+if __name__ == '__main__':
+    # 加载保存的NumPy数组
+    oracle_worker = [0.1274182411880429, 0.10120543142093887, 0.10566259603864457, 0.11069937425046995,
+                     0.12472410703131681, 0.04037496737383016,
+                     0.07515931281861461, 0.12534738671061416, 0.11218173187960483, 0.07722685128792318]
+    numpy_array = np.load('../getOracleWorker/numpy_array.npy')
+    print(numpy_array.shape)
+    numpy_array = np.vstack((numpy_array, oracle_worker))
+    # plotWorkerScatter.workerScatter(numpy_array)
+    workerScatter_IOSMAP(numpy_array)
