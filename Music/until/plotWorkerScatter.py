@@ -149,3 +149,11 @@ def workerScatter_mds(data):
     plt.scatter(X_mds[:, 0], X_mds[:, 1], c=colors_9, cmap='RdYlGn')
     plt.colorbar()
     plt.show()
+if __name__ == '__main__':
+    oracle_worker = [0.13820427203489055, 0.17980818216228567, 0.10761719211584557, 0.038788771730331156, 0.029946872563708732,
+                   0.2463344734515049, 0.08802976167845389, 0.06770221475833456, 0.09193783730082672, 0.01163042220381843]
+    numpy_array = np.load('../getOracleWorker/numpy_array.npy')
+    print(numpy_array.shape)
+    numpy_array = np.vstack((numpy_array, oracle_worker))
+    # plotWorkerScatter.workerScatter(numpy_array)
+    workerScatter_IOSMAP(numpy_array)
