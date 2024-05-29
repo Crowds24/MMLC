@@ -28,12 +28,13 @@ Clone data needs to use git lfs. Because of the size of the uploaded training da
 git lfs clone https://github.com/Crowds24/MMLC.git
 ```
 ## Result
-### truth inference
+### Evaluation of Oracle Worker Finding (MMLC-owf)
+#### 1.1 Main Result
 True inference can be directly performed through the trained model. For example, under the getOracleWorker package of music, you can load the trained model (musicModel_origin) in the train package and run the following command to obtain the results.
 ```setup
 python getOracleWorker.py
 ```
-### train
+###### Train
 Train the model through the train method under the trian package.Train the model by training the train method under the trian package, and then load the corresponding model in the getOracleWorker package method for true value inference.
 In train package：
 ```setup
@@ -43,18 +44,30 @@ In getOracleWorker package：
 ```setup
 python getOracleWorker.py
 ```
-### fillData 
-Data can be filled under the fillData package, and the filled data can be used to train the model. The process is the same as in the train chapter.
-```setup
-python fill.py
-```
-### redundancy
+#### 1.2 Impact of Redundancy
 In the until package, data can be divided according to the redundancy value.the divided data can be used to train the model. The process is the same as in the train chapter.
 ```setup
 python redundancy.py
 ```
-### upperLimit
+#### 1.3 Clustering Methods in Oracle Worker Finding:
 Get the upper limit of oracle worker capabilities by running the method in upperLImit
 ```setup
 python trainModel.py
 ```
+#### 1.4 Worker Distribution in Worker Spectral Space
+There is a method for drawing scatter plots in the until package, which can be used by calling it in getOracleWorker.
+### The Change of Accuracy After Data Filling
+#### 2.1 Main Result
+Data can be filled under the fillData package, and the filled data can be used to train the model.
+```setup
+python fill.py
+```
+#### 2.2 Impact of Data Filling's Density
+Data can be selectively filled based on data density, and the filled data can be used to train the model. The process is the same as in the train chapter.
+```setup
+python fill.py
+```
+
+
+
+
