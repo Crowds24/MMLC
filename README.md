@@ -56,6 +56,9 @@ python trainModel.py
 ```
 #### 1.4 Worker Distribution in Worker Spectral Space
 There is a method for drawing scatter plots in the until package, which can be used by calling it in getOracleWorker.
+```setup
+plotWorkerScatter.py
+```
 ### The Change of Accuracy After Data Filling
 #### 2.1 Main Result
 Data can be filled under the fillData package, and the filled data can be used to train the model.
