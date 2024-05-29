@@ -55,7 +55,7 @@ Get the upper limit of oracle worker capabilities by running the method in upper
 python trainModel.py
 ```
 #### 1.4 Worker Distribution in Worker Spectral Space
-There is a method for drawing scatter plots in the until package, which can be used by calling it in getOracleWorker.
+There is a method for drawing scatter plots in the until package.
 ```setup
 plotWorkerScatter.py
 ```
