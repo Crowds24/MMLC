@@ -30,7 +30,7 @@ git lfs clone https://github.com/Crowds24/MMLC.git
 ## Result
 ### Evaluation of Oracle Worker Finding (MMLC-owf)
 #### 1.1 Main Result
-True inference can be directly performed through the trained model. For example, under the getOracleWorker package of music, you can load the trained model (musicModel_origin) in the train package and run the following command to obtain the results.
+True inference can be directly performed through the trained model. For example, under the getOracleWorker package of image, you can load the trained model (imageModel_origin) in the train package and run the following command to obtain the results.
 ```setup
 python getOracleWorker.py
 ```
